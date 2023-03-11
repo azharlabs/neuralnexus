@@ -31,7 +31,7 @@ setup(
     description="neuralnexus - An open source, low-code machine learning library in Python.",
     long_description=readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/pycaret/pycare t",
+    url="https://github.com/azharlabs/neuralnexus",
     author="Mohamed Azharudeen",
     author_email="azhar@neuralnexus.cloud",
     license="MIT",

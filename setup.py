@@ -7,7 +7,11 @@ from setuptools import find_packages, setup
 def readme():
     with open("README.md", encoding="utf8") as f:
         README = f.read()
-    return README
+
+    with open("CHANGELOG.txt") as c:
+        change = c.read()
+
+    return README +'\n\n'+ change
 
 
 with open("requirements.txt") as f:
@@ -27,8 +31,8 @@ extras_require["full"] = (
 
 setup(
     name="neuralnexus",
-    version="0.1.0",
-    description="neuralnexus - An open source, low-code machine learning library in Python.",
+    version="0.0.1",
+    description="neuralnexus - An open source, low-code machine learning framework in Python.",
     long_description=readme(),
     long_description_content_type="text/markdown",
     url="https://github.com/azharlabs/neuralnexus",
